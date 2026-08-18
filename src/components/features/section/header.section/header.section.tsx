@@ -13,7 +13,7 @@ const sectionHeaderVariants = cva("grid mb-8 md:mb-16 mt-10", {
 	variants: {
 		variant: {
 			editorial: "grid-cols-2 grid-rows-2 gap-4",
-			center: "grid-cols-1 grid-row3-3 gap-2",
+			center: "grid-cols-1 grid-rows-3 gap-2",
 		},
 		size: {
 			base: "",
