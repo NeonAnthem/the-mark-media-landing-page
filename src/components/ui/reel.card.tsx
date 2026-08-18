@@ -7,7 +7,7 @@ function ReelVideoCard() {
   return (
     <div>
       <video
-        src={`/assets/videos/horux-campaign.mp4`}
+        src="/assets/videos/horux-campaign.mp4"
         className="rounded-xl w-0 h-0 lg:w-75 lg:h-132.5 object-cover"
         autoPlay
         muted
