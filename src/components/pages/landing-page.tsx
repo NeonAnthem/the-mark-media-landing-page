@@ -5,9 +5,9 @@ import { useEffect } from "react";
 import AboutSection from "../ui/about.home";
 import CompaniesSection from "../ui/companies.home";
 import FooterCTASection from "../ui/footer-cta.home";
-import HeroSection from "../ui/hero.home";
 import ProcessHomeSection from "../ui/process.home";
 import { WorkHomePage } from "../ui/work.home";
+import HeroUpdate from "./hero-update";
 
 export default function LandingPage() {
   const setText = useSetAtom(footerTextAtom);
@@ -18,7 +18,8 @@ export default function LandingPage() {
 
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroUpdate />
       <AboutSection />
       <ProcessHomeSection />
       <WorkHomePage />
