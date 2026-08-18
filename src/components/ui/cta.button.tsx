@@ -12,10 +12,9 @@ import { PropsWithChildren, useState } from "react";
 const ctaButtonVariants = cva("flex items-center font-medium", {
   variants: {
     variant: {
-      default:
-        "bg-linear-90 from-secondary to-foreground text-secondary-foreground",
+      default: "text-foreground",
       primary:
-        "bg-linear-135 from-primary/30 to-background text-foreground outline outline-primary/40 [&>span]:bg-primary [&>span]:text-background",
+        "bg-primary text-foreground outline outline-primary/40 [&>span]:bg-primary [&>span]:text-background",
     },
     mode: { default: "", rounded: "rounded-full [&>span]:rounded-full pl-3!" },
     size: {
