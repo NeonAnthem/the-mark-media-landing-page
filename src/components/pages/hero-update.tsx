@@ -252,10 +252,10 @@ const logos: LogoListType = [
   },
   {
     src: "/assets/client-logos/phoenix-marketcity.png",
-    alt: "Pheonix Marketcity",
+    alt: "Phoenix Marketcity",
     opacity: 0.55,
     size: "4rem",
-  },
+  }
   {
     src: "/assets/client-logos/mantri-square.png",
     alt: "Mantri Square",
