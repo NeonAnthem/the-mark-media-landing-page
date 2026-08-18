@@ -77,7 +77,7 @@ export function CTAButton({
         ctaButtonVariants({ className, mode, variant, size }),
       )}
     >
-      <div className="">{children ? children : "Book a call"}</div>
+      {children ? children : "Book a call"}
       <motion.span className="bg-background text-foreground -mr-1 *:size-4 overflow-hidden">
         <div className="flex items-center m-2 *:-translate-x-1">
           <motion.div

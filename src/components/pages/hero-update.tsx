@@ -7,20 +7,6 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { ReelVideoCard } from "../ui/reel.card";
 
-const brands = [
-  "Phoenix Marketcity",
-  "Nykaa",
-  "Verosha",
-  "Escenza",
-  "Marrekesh",
-  "Sakal",
-  "Pride of Cows",
-  "Mantri Square",
-  "Kiki",
-  "Bastian",
-  "Coffee Co",
-];
-
 type ReelFrameProps = {
   className?: string;
   imageSrc: string;
@@ -212,12 +198,12 @@ function Logo({ src, alt, opacity, size }: LogoListType[number]) {
   return (
     <div className="px-12 w-56 h-14 flex items-center justify-center">
       <Image
-        src={src!}
-        alt={alt!}
+        src={src}
+        alt={alt}
         width={400}
         height={400}
         style={{
-          opacity: opacity || 0.55,
+          opacity: opacity ?? 0.55,
           width: `${size || "6rem"}`,
           // height: `${size || "6rem"}`,
         }}

@@ -12,7 +12,7 @@ const headlineVariant = cva("w-max", {
   variants: {
     variant: {
       editorial:
-        "text-start align-items-start col-start-1 col-end-2 row-start-1 row-end-2",
+        "text-start items-start col-start-1 col-end-2 row-start-1 row-end-2",
       center: "text-center",
     },
     size: {

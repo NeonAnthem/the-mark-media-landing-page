@@ -12,6 +12,8 @@ function ReelVideoCard() {
         autoPlay
         muted
         loop
+        playsInline
+        preload="metadata"
       />
     </div>
   );
@@ -23,7 +25,7 @@ function ReelVideoCard() {
  * @returns JSX
  */
 function ReelCard() {
-  return <div></div>;
+  return null;
 }
 
 export { ReelCard, ReelVideoCard };

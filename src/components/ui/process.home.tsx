@@ -34,10 +34,6 @@ export default function ProcessHomeSection() {
   );
 }
 
-function NewProcessCard() {
-  return <div className=""></div>;
-}
-
 function SecondaryComp() {
   return (
     <div className="z-10 absolute top-0 bottom-0 right-0 left-0 h-full w-full flex items-center justify-around">
