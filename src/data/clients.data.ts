@@ -37,7 +37,7 @@ export const CLIENTLOGOS: IClientLogo[] = [
   },
   {
     src: "/assets/client-logos/phoenix-marketcity.png",
-    alt: "Pheonix Marketcity",
+    alt: "Phoenix Marketcity",
     opacity: 0.55,
     size: "4rem",
   },
