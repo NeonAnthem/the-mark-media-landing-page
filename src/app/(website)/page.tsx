@@ -7,7 +7,6 @@ import {
 import MorphCaseStudy from "@/components/pages/case-studies/morph.cs";
 import GridClientComponent from "@/components/pages/client.block/grid.client";
 import DefaultHeroComponent from "@/components/pages/hero.block/default.hero";
-import LandingPage from "@/components/pages/landing-page";
 import ExpertiseSlider from "@/components/pages/sliders/expertise.slider";
 import { Button } from "@/components/ui/button";
 import { CLIENTLOGOS } from "@/data/clients.data";
