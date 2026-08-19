@@ -140,7 +140,7 @@ export default function DefaultNav() {
               <IconMenu className="size-4 sm:size-6" />
             </span>
             <CTAButton
-              mode="rounded"
+              iconMode="tiled"
               className="pl-3 text-base py-0.5 outline outline-background [&>span]:-mr-1.5"
             >
               Talk to Us
@@ -158,7 +158,7 @@ export const BrandLogo = ({ onClick }: { onClick: () => void }) => (
   <div className="">
     <Link
       href="/"
-      className="text-white stroke-1 stroke-white fill-white"
+      className="stroke-1 dark:stroke-white dark:fill-white stroke-black fill-black"
       onClick={() => {
         onClick();
       }}
