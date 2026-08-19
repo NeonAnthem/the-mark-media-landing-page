@@ -87,6 +87,14 @@ function TestimonialVideo({ videoSrc }: { videoSrc: string }) {
   return (
     <div
       className="relative w-100 h-125 lg:block cursor-pointer"
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          togglePlayback();
+        }
+      }}
       onClick={togglePlayback}
     >
       {/* Play Icon */}
