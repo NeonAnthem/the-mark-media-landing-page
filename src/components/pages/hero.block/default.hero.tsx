@@ -35,7 +35,7 @@ export default function DefaultHeroComponent() {
         <div className="h-[95vh] overflow-hidden lg:rounded-bl-none border">
           <video
             className="h-[inherit] w-full object-cover"
-            src={"assets/videos/horux-campaign.mp4"}
+            src={"/assets/videos/horux-campaign.mp4"}
             autoPlay
             muted
             loop
