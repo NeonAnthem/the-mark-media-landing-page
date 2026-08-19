@@ -670,9 +670,10 @@ export default function MorphSlider({
     const onDown = (e: PointerEvent) => {
       const rect = el.getBoundingClientRect();
       width = rect.width || 1;
+      const height = rect.height || 1;
       startX = e.clientX;
-      const px = (e.clientX - rect.left) / rect.width;
-      const py = (e.clientY - rect.top) / rect.height;
+      const px = (e.clientX - rect.left) / width;
+      const py = (e.clientY - rect.top) / height;
       engineRef.current?.setPointer(px, 1 - py);
       active = engineRef.current?.beginDrag() ?? false;
       if (active && el.setPointerCapture) {
