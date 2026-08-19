@@ -76,8 +76,11 @@ function TestimonialVideo({ videoSrc }: { videoSrc: string }) {
     if (!video) return;
 
     if (video.paused) {
-      video.play();
-      setIsPlaying(true);
+      void video.play().then(() => {
+        setIsPlaying(true);
+      }).catch(() => {
+        setIsPlaying(false);
+      });
     } else {
       video.pause();
       setIsPlaying(false);
