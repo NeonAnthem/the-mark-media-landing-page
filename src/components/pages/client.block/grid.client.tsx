@@ -30,9 +30,9 @@ export default function GridClientComponent({
           )}
         >
           {/* Logos */}
-          {clientList?.map((logo, index) => (
+          {clientList?.map((logo) => (
             <div
-              key={index}
+              key={logo.src}
               className={cn(
                 "flex items-center justify-center w-full min-h-fit ring ring-border-muted rounded-xl bg-background",
                 "row-span-1 col-span-1",
