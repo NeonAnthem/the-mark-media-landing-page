@@ -75,5 +75,4 @@ export default function Page() {
       {/* end Industrial Section */}
     </>
   );
-  return <LandingPage />;
 }
