@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 import { PropsWithChildren, useState } from "react";
 
 const ctaButtonVariants = cva(
-  "flex items-center font-medium **:[&>svg]:size-4",
+  "flex items-center font-medium [&_svg]:size-4",
   {
     variants: {
       variant: {
