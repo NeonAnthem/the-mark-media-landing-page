@@ -9,25 +9,31 @@ import { motion, Transition } from "motion/react";
 import { useRouter } from "next/navigation";
 import { PropsWithChildren, useState } from "react";
 
-const ctaButtonVariants = cva("flex items-center font-medium", {
-  variants: {
-    variant: {
-      default: "text-foreground",
-      primary:
-        "bg-primary text-foreground outline outline-primary/40 [&>span]:bg-primary [&>span]:text-background",
+const ctaButtonVariants = cva(
+  "flex items-center font-medium **:[&>svg]:size-4",
+  {
+    variants: {
+      variant: {
+        default: "text-foreground",
+        primary:
+          "bg-primary text-foreground outline outline-primary/40 [&>span]:bg-primary [&>span]:text-foreground",
+      },
+      mode: {
+        default: "rounded-sm",
+        rounded: "rounded-full [&>span]:rounded-full pl-3!",
+      },
+      size: {
+        base: "px-2 py-1 gap-2 text-xl",
+        small: "px-2 py-0.5 gap-3 text-base [&>span]:-mr-1.5",
+      },
     },
-    mode: { default: "", rounded: "rounded-full [&>span]:rounded-full pl-3!" },
-    size: {
-      base: "px-2 py-1 gap-4 text-xl",
-      small: "px-2 py-0.5 gap-3 text-base [&>span]:-mr-1.5",
+    defaultVariants: {
+      variant: "primary",
+      mode: "default",
+      size: "base",
     },
   },
-  defaultVariants: {
-    variant: "primary",
-    mode: "rounded",
-    size: "base",
-  },
-});
+);
 
 export function CTAButton({
   children,

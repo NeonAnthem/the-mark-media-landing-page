@@ -164,21 +164,26 @@ export default function HeroUpdate() {
       </div>
 
       {/* Brand bar */}
-      <div className="py-0">
-        <div className="flex items-center">
-          <div className="shrink-0 px-6 py-4 border-r border-[#5a5a5a]">
-            <p className="text-foreground font-grotesk font-medium text-sm leading-snug whitespace-nowrap">
-              40+ Brands.
-              <br />
-              One Standard.
-            </p>
-          </div>
-          <div className="flex-1 overflow-hidden bg-linear-90 from-[#5a5a5a]/10 to-foreground">
-            <Marquee className="[--duration:30s]" reverse>
-              {logos?.map((logo) => {
-                return <Logo key={logo.src} {...logo} />;
-              })}
-              {/* {brands.map((brand) => (
+    </Section>
+  );
+}
+export function ClientMarquee() {
+  return (
+    <div className="py-0">
+      <div className="flex items-center">
+        <div className="shrink-0 px-6 py-4 border-r border-[#5a5a5a]">
+          <p className="text-foreground font-grotesk font-medium text-sm leading-snug whitespace-nowrap">
+            40+ Brands.
+            <br />
+            One Standard.
+          </p>
+        </div>
+        <div className="flex-1 overflow-hidden bg-linear-90 from-[#5a5a5a]/10 to-background">
+          <Marquee className="[--duration:30s]" reverse>
+            {logos?.map((logo) => {
+              return <Logo key={logo.src} {...logo} />;
+            })}
+            {/* {brands.map((brand) => (
                 <span
                   key={brand}
                   className="text-[#5a5a5a] font-grotesk font-medium text-base px-6 whitespace-nowrap"
@@ -186,11 +191,10 @@ export default function HeroUpdate() {
                   {brand}
                 </span>
               ))} */}
-            </Marquee>
-          </div>
+          </Marquee>
         </div>
       </div>
-    </Section>
+    </div>
   );
 }
 

@@ -2,7 +2,7 @@ import ContactFormDialog from "@/components/dialog/contact-form";
 import LenisProvider from "@/components/provider/lenis-provider";
 import DefaultNav from "@/components/ui/default.nav";
 import Footer from "@/components/ui/footer";
-import { fontSpaceGrotesk, geistMono, openSauceTwoFont } from "@/lib/fonts";
+import { geistMono } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -28,14 +28,15 @@ export default function RootLayout({
         className={cn(
           "font-sans",
           `antialiased`,
-          fontSpaceGrotesk.variable,
-          openSauceTwoFont.variable,
+          geist.variable,
+          // fontSpaceGrotesk.variable,
+          // openSauceTwoFont.variable,
           geistMono.variable,
         )}
       >
         <LenisProvider>
           <DefaultNav />
-          <main className="**:data-[block=contain]:px-4 sm:**:data-[block=contain]:px-0 sm:**:data-[block=contain]:container sm:**:[data-block=contain]:mx-auto">
+          <main className="**:data-[block=contain]:px-4 sm:**:data-[block=contain]:px-0 sm:**:data-[block=contain]:container sm:**:[data-block=contain]:mx-auto selection:bg-primary">
             {children}
           </main>
           <Footer />
